@@ -1,0 +1,58 @@
+.h-wrapper {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  /* position: sticky;
+  top: 0;
+  z-index: 99; */
+}
+
+.h-container {
+  display: flex;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--grey-color);
+}
+
+.h-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-right>* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width:768px) { 
+  .menu-icon {
+    display: block;
+  }
+
+  .h-right {
+    color: var(--black-color);
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    background-color: white;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    align-items: flex-start;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease-in;
+    z-index: 99;
+  }
+}
