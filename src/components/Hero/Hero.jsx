@@ -2,6 +2,7 @@ import React from "react";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import "./Hero.css";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,9 +11,15 @@ const Hero = () => {
         <div className="hero-left">
           <div className="orange-circle"></div>
           <div className="hero-title">
-            <h1>
+            <motion.h1
+              initial={{y: "2rem", opacity: 0}}
+              animate={{y: 0, opacity: 1}}
+              transition={{
+                duration: 2,
+                type: "spring"
+            }}>
               Discover <br /> Most Suitable <br /> Property
-            </h1>
+            </motion.h1>
           </div>
 
           <div className="hero-des">
@@ -54,12 +61,19 @@ const Hero = () => {
         </div>
 
         <div className="hero-right">
-          <div className="image-container">
+          <motion.div
+          initial={{x: "7rem", opacity: 0}}
+          animate={{ x: 0,opacity:1 }}
+          transition={{
+            duration: 2,
+            type: "spring"
+          }}
+          className="image-container">
             <img
               src="https://real-estate-web.pages.dev/hero-image.png"
               alt="House"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

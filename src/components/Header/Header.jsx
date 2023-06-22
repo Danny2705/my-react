@@ -22,7 +22,7 @@ const Header = () => {
         />
         <OutsideClickHandler
           onOutsideClick={() => {
-            setMenuOpen(false); 
+            setMenuOpen(false);
           }}
         >
           <div className="h-right" style={getMenuStyle(menuOpen)}>
