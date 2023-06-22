@@ -1,14 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import accordion from "../../data/accordion";
 import "./Value.css";
 
 const Value = () => {
-  const [accOpen, setAccOpen] = useState(false);
-  const openAccordion = () => {
-    setAccOpen(!accOpen)
-  }
+  const [accOpen, setAccOpen] = useState(null);
+
+  const openAccordion = (index) => {
+    setAccOpen((prevIndex) => (prevIndex === index ? null : index));
+  };
+
   return (
     <section className="v-wrapper">
       <div className="v-container innerWidth">
@@ -25,31 +26,34 @@ const Value = () => {
           <div className="orange-text">Our Value</div>
           <span>Value we give to you</span>
           <p>
-            We always ready to help by providijng the best services for you.
+            We are always ready to help by providing the best services for you.
             <br />
-            We beleive a good blace to live can make your life better
+            We believe a good place to live can make your life better.
           </p>
 
           <div className="accord innerWidth">
-            {accordion.map((prop, i) => {
-              return (
-                <div className="accord-wrapper innerWidth" key={i}>
-                  <div className="accord-container innerWidth">
-                    <div className="header">
-                      <div className="acc-icon">{prop.icon}</div>
+            {accordion.map((prop, i) => (
+              <div className="accord-wrapper innerWidth" key={i}>
+                <div className="accord-container innerWidth">
+                  <div className="header">
+                    <div className="acc-icon">{prop.icon}</div>
 
-                      <div className="acc-title">{prop.title}</div>
+                    <div className="acc-title">{prop.title}</div>
 
-                      <div className="acc-arrow" onClick={openAccordion}>
-                        <MdOutlineArrowDropDown />
-                      </div>
+                    <div
+                      className="acc-arrow"
+                      onClick={() => openAccordion(i)}
+                    >
+                      <MdOutlineArrowDropDown />
                     </div>
-
-                    {!accOpen && <div className="acc-des">{prop.description}</div>}
                   </div>
+
+                  {accOpen === i && (
+                    <div className="acc-des">{prop.description}</div>
+                  )}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>
