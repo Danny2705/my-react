@@ -18,9 +18,21 @@
     "image_url": "https://real-estate-web.pages.dev/r3.png"
   },
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image_url": "https://real-estate-web.pages.dev/r1.png"
+    "name": "Stunning & Spacious Union City Home",
+    "price": "2,099,000",
+    "detail": "31155 Brooklyn, Union City, CA 94587",
+    "image_url": "https://images.zerodown.com/paragonrels//ParagonImages/Property/P3/MAXEBRDI/41017260/1/0/0/bf417fcdf4861eb56672684b5e7f07ae/129/323bcfb097721cef82dbe44ed3a45102/41017260-1.JPG?tr=f-auto,w-360,h-270"
+  },
+  {
+    "name": "Single Family Home",
+    "price": "2,250,000",
+    "detail": "5126 Morales Ct, Union City, CA 94587",
+    "image_url": "https://images.zerodown.com/paragonrels//ParagonImages/Property/P3/MAXEBRDI/41016261/0/0/0/628580e5b1a29f00708da8df9b5bcce0/114/2aaeecd36a5bdefbdd75da55f675bc0a/41016261.JPG"
+  },
+  {
+    "name": "Single Family Home",
+    "price": "2,099,888",
+    "detail": "35962 Copper St, Union City, CA 94587",
+    "image_url": "https://images.zerodown.com/paragonrels//ParagonImages/Property/P3/MAXEBRDI/41014292/0/0/0/2fb59c388a285a50ac93586827494adb/114/d73088f11e1660f6e214c7b653e7b834/41014292.JPG"
   }
 ]
